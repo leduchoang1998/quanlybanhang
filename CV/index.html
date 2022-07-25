@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body onload="checkAdmin()">
+<nav>
+    <div class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="../img/logo.png" alt="logo công ty">
+            <div id="header">
+
+            </div>
+        </div>
+        <div class="header__content">
+            <H1 class="header__content-content">QUẢN LÝ SẢN PHẨM ĐIỆN THOẠI ĐƠN GIẢN</H1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="managerproduct">
+            <table class="managerproduct__table1">
+                <tr>
+                    <th colspan="4" class="managerproduct__content">Quản Lý Sản Phẩm</th>
+                </tr>
+                <tr>
+                    <td><input id="name" type="text" placeholder="Nhập tên điện thoại"></td>
+                    <td><input id="type" type="text" placeholder="Nhập loại điện thoại "></td>
+                    <td><input id="price" type="text" placeholder="Nhập giá điện thoại "></td>
+                    <td><input id="img" type="text" placeholder="Nhập link hình ảnh  "></td>
+                </tr>
+
+                <tr>
+                    <th colspan="4">
+                        <button id="add" onclick="addPhone()">ADD</button>
+                        <button onclick="updatePhone()">SAVE</button>
+                    </th>
+
+                </tr>
+            </table>
+        </div>
+
+        <div class="showproduct" >
+            <table class="managerproduct__table2">
+                <tr>
+                    <th colspan="6">
+                        <h2 class="managerproduct__table2-content">Danh Sách Sản Phẩm</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Tên Sản Phẩm</td>
+                    <td>Loại Điện Thoại</td>
+                    <td>Giá Cả</td>
+                    <td>Hình Ảnh</td>
+                    <td><span id="result"></span></td>
+                </tr>
+                <tbody id="list-phone">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</nav>
+
+</body>
+<script src="../js/main.js"></script>
+<script src="../js/oop_phone.js"></script>
+<script src="../js/listphone.js"></script>
+
+
+
+</html>
